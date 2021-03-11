@@ -23,7 +23,7 @@ void main(List<String> arguments) async {
       defaultsTo: false);
 
   parser.addOption('android-serialno',
-      help: 'use device with given serial', valueHelp: 'emulator-5554');
+      help: 'Use device with given serial', valueHelp: 'emulator-5554');
 
   parser.addFlag('force',
       abbr: 'f', help: 'Force start playback', defaultsTo: false);
@@ -91,7 +91,7 @@ Future<Args> resolve(ArgResults results) async {
     final devices = await AndroidUtil.listAllDevices(cmd: adb);
     if (androidSerialno == null) {
       if (devices.length > 1) {
-        stderr.writeln('error: more than one device/emulator\n${devices.join('\n')}');
+        stderr.writeln('error: more than one device/emulator.\nPlease specify the android-serialno parameter\n${devices.join('\n')}');
         exit(2);
       }
     }else{
