@@ -91,7 +91,7 @@ Future<Args> resolve(ArgResults results) async {
     final devices = await AndroidUtil.listAllDevices(cmd: adb);
     if (androidSerialno == null) {
       if (devices.length > 1) {
-        stderr.writeln('error: more than one device/emulator');
+        stderr.writeln('error: more than one device/emulator\n${devices.join('\n')}');
         exit(2);
       }
     }else{
