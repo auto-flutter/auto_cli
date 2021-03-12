@@ -1,3 +1,3 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.1] 
 
-* TODO: Describe initial release.
+* A command line tool that can play back Auto files and output test reports, and can be integrated with automation systems (e.g. Jenkins)
