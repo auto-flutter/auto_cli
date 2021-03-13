@@ -8,9 +8,6 @@ A command line tool that can play back `Auto` files and output test reports, and
 ```
 $ dart pub global activate auto_cli   #(Need dart sdk and sdk>=2.12.0-0)
 ```
-or
-
-[Releases Node](https://github.com/auto-flutter/auto_cli/releases)
 
 #### 2. Install Auto Util
 See [Auto Util](https://github.com/auto-flutter/auto_util)
