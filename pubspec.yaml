@@ -1,11 +1,11 @@
 name: auto_cli
 description: A command line tool that can play back Auto files and output test reports.
 version: 0.0.1
-author:
+email: vivaskerror@gmail.com
 homepage: https://github.com/auto-flutter/auto_cli
 
 environment:
-  sdk: ">=2.12.0-0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 #dependency_overrides:
 #  auto_core:
@@ -14,6 +14,7 @@ environment:
 dependencies:
   args: ^2.0.0
   auto_core: ^0.0.1
+  path: ^1.0.0
 
 dev_dependencies:
   test: any
